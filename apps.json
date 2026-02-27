@@ -506,5 +506,48 @@
       }
     ],
     "setup": []
+  },
+  {
+    "name": "Idea Reality",
+    "description": "Pre-build reality check for AI coding agents. Scans GitHub, HN, npm, PyPI, and Product Hunt before you build — returns a 0-100 reality signal.",
+    "icon": {
+      "type": "url",
+      "url": {
+        "light": "https://avatars.githubusercontent.com/u/263367191?v=4",
+        "dark": "https://avatars.githubusercontent.com/u/263367191?v=4"
+      }
+    },
+    "category": "Utilities",
+    "price": "Free",
+    "developer": "Mnemox AI",
+    "sourceUrl": "https://github.com/mnemox-ai/idea-reality-mcp",
+    "config": {
+      "mcpKey": "idea-reality",
+      "runtime": "uvx",
+      "args": [
+        "idea-reality-mcp"
+      ]
+    },
+    "features": [
+      {
+        "name": "Reality check an idea",
+        "description": "Scan existing projects across GitHub, HN, npm, PyPI and Product Hunt before building",
+        "prompt": "Check if someone has already built a CLI tool for generating release announcements"
+      },
+      {
+        "name": "Deep market analysis",
+        "description": "Run comprehensive analysis across all 5 sources with detailed evidence",
+        "prompt": "idea_check 'AI-powered code review tool' depth=deep"
+      }
+    ],
+    "setup": [
+      {
+        "label": "GitHub Token (optional, for higher rate limits)",
+        "type": "input",
+        "value": "",
+        "placeholder": "ghp_xxxxxxxxxxxx",
+        "key": "GITHUB_TOKEN"
+      }
+    ]
   }
 ]
